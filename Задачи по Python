@@ -385,4 +385,24 @@ def modify_list(l):
         l.append(i)
         
 Задача 30.
-
+def update_dictionary(d, key, value):
+    if key in d:
+        d[key]+=[value]
+    elif key not in d:
+        if key*2 in d:
+            d[key*2]+=[value]
+        else:
+            d[key*2] = [value]
+ 
+Задача 31.
+s = input().lower().split()
+a=set(s)
+b=0
+for i in a:
+    for j in s:
+        if j==i:
+            b+=1
+    print(i, b)
+    b=0
+    
+Задача 32.
